@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ajhChat</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="/images/icon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ajhchat.ajh499.repl.co/">
+  <meta property="og:title" content="ajhChat">
+  <meta property="og:description" content="ajhChat is an easy-to-use chat website, where you can be anything you want, any time. No passwords, no emails. Set a username, and send away!">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <meta property="og:image" content="https://ajhchat.ajh499.repl.co/images/logo.png">
+</head>
+
+<body>
+
+<script>
+
+
+window.addEventListener("beforeunload", function(event) {
+  event.returnValue = "this is to prevent the tab being closed from classwize";
+});
+  
+  $(document).ready(function(){
+  $("#newmsg").click(function(){
+      var elem = document.getElementById('chat-output');
+    elem.scrollTop = elem.scrollHeight;
+    $("#newmsg").hide();
+  });
+  $("#show").click(function(){
+    scroll()
+    $("#newmsg").show();
+  });
+   
+});
+
+  
+
+
+</script>
+<script>
+function resolveAfter2Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      $("#newmsg").hide();
+       var elem = document.getElementById('chat-output');
+  elem.scrollTop = elem.scrollHeight;
+    }, 1000);
+  });
+}
+  
+  resolveAfter2Seconds()
+ </script>
+<script type="module" src="script.js"></script>
+
+<div id="container">
+
+<a class="nounderline" href="/"><h1 class="center-logo">ajhChat <i class="bi bi-chat-left-fill"></i></h1></a>
+<div id="newmsg">scroll to new messages</div>
+  <div id="chatbox">
+    <div id="chat-output"><p>-- this is the start. messages are cleared after 20 mins</p><noscript><h1>ajhChat requires javascript</h1><p>you need javascript turned on to read messages and chat</p></noscript></div>
+    <span class="br"></span>
+    <input type="text" id="chat-input" placeholder="type message here">
+    <span class="br"></span>
+    <input type="text" id="chat-username" placeholder="put a name">
+    <button id="chat-send">send</button>
+    <span class="br"></span>
+    <p><span id="online">users online (0):</span></p>
+  </div>
+</div>
+</body>
+
+</html>

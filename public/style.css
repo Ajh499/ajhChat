@@ -1,0 +1,166 @@
+/* make the bold text look cleaner */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: #0b0b0b;
+  color: #ffffff !important;
+  overflow-x: hidden;
+  display: auto;
+  word-wrap: break-word !important;
+  font-size: 1em;
+}
+
+#chatbox {
+  width: 100%;
+  margin: 0 auto;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+#newmsg {
+  background: #4f4f4f;
+  padding: 1em;
+  border-radius: 0 0 1em 1em;
+}
+
+#chat-output {
+  height: 15em;
+  overflow: auto;
+  border: 0;
+  padding: 10px;
+  line-spacing: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+#chat-input {
+  width: 93%;
+  font-family: 'Roboto', sans-serif;
+  background: #292929;
+  color: #ffffff;
+  border: none;
+  border-radius: 1em;
+  padding: 1em;
+
+  transition: background .5s, transform .5s;
+}
+
+#chat-input:hover, #chat-username:hover, #full-button:hover {
+  background: #363636;
+  color: #ffffff;
+  border: none;
+  font-family: Roboto, sans-serif;
+}
+
+#chat-input, #chat-username, #full-button {
+  font-family: Roboto, sans-serif;
+}
+
+#chat-input:focus, #chat-username:focus {
+outline: none;
+}
+
+input {
+autocomplete: off;
+}
+
+#chat-username {
+  width: 42%;
+  font-family: 'Roboto', sans-serif;
+  background: #292929;
+  color: #ffffff;
+  border: none;
+  border-radius: 1em;
+  padding: 1em;
+
+  transition: background .5s, transform .5s;
+}
+
+#chat-send {
+  background-color: #568ac9;
+  padding: 1em;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  border: 0;
+  border-radius: 1em;
+
+  transition: background .5s, transform .5s;
+}
+
+#chat-send:hover {
+  background-color: #6695ce;
+  padding: 1em;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  border: 0;
+  border-radius: 1em;
+}
+
+#container {
+  width: 25em;
+  border: 0.2em solid #efefef;
+  border-radius: 2em;
+  padding: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  display: fit;
+  
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.br {
+  display: block;
+  margin-bottom: 0.5em;
+ }
+
+a {
+color: inherit;
+text-decoration: underline;
+}
+
+a:hover {
+color: #a1d5e7;
+text-decoration: underline;
+}
+
+.center-logo {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#full-button {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: #292929;
+  color: #ffffff;
+  border: none;
+  border-radius: 1em;
+  padding: 1em;
+
+  transition: background .5s, transform .5s;
+}
+
+.nounderline {
+font-size: 1em;
+text-decoration: none;
+}
+
+.nounderline:hover {
+font-size: 1em;
+text-decoration: none;
+color: #ffffff;
+}
